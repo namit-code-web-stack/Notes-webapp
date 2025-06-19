@@ -1,0 +1,300 @@
+*{
+    margin-top: 0;
+    padding-top :0; ;
+}
+body{
+    margin: 0;
+    background-image: url(./image.png);
+
+}
+#r1{
+    accent-color:green;
+    border:3px solid green;
+    
+}
+#r2{
+     accent-color:yellow;
+    border:3px solid black;
+}
+#r3{
+    accent-color: red;
+      border:3px solid red;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.enabled {
+ pointer-events: auto;  
+}
+#container{
+    margin: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: auto;
+}
+#textbox,#message{
+    height: 14vh;
+    width: 17vw;
+    margin-top: 0;
+    outline: none;
+    font-size: 2vh;
+    border: 3px solid black;
+    border-radius: 5vh;
+    text-align: center; 
+    font-weight: bold;
+    text-shadow: 1px 1px -1px black;
+    background-color: grey;
+    border: 2px solid #555;
+    font-size: 2.5vh;
+    border-radius: 3vh;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+#textbox{
+  margin-left: 2vh;
+}
+#textbox:hover,#message:hover,.radio:hover{
+    border: 3px solid purple;
+}
+
+#con{
+height: auto;
+width: auto;
+display: block;
+}
+.radio{
+    display: flex;
+height: 3vh;
+width: 2vw;
+gap: 0;
+       margin-top: 6vh;
+}
+
+#button{
+height: 6vh;
+width: 12vh;
+margin-top: 0;
+font-size: 1.5vh;
+border-radius: 3vh;
+margin-top: 5vh;
+margin-left: 0vh;
+background-color:#ff7373;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#icon>svg{
+    margin-left: 16vh;
+    height: 6vh;
+    width: 6vh;
+    margin-top: -14vh;
+    position: absolute;
+}
+#img1{
+    height: 6vh;
+    width: 6vh;
+    margin-right: 5vh;
+    border-radius: 11vh;
+    margin-top: 5vh;
+    background-color: whitesmoke;}
+#img1:hover{
+    background-color: #555;
+        border: 3px solid purple;
+}
+
+
+#drop1,#drop2,.edit,#drop4{
+    height: 3vh;
+    width: auto;
+    cursor: pointer;
+    margin: 3vh;
+    justify-content: space-around;
+}
+
+#drop4{
+    margin-left:24vh ;
+    background-color: aliceblue;
+    border-radius: 27%;
+    
+}
+#drop1:hover{
+  background-color: green;
+}
+#drop3:hover{
+background-color: wheat;
+}
+
+#drop2:hover{
+  background-color:   red;
+}
+#symbol:hover{
+    background-color: #555;
+    border-radius: 50%;
+    color:azure;
+    cursor: pointer;
+}
+#button:hover{
+    border: 3px solid purple;
+}
+
+.delete-section{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    overflow: auto;
+  scrollbar-width: none; 
+    background-color:darkgrey;;
+    height: 6vh;
+    width: auto;
+  
+}
+#heading>h1{
+font-size: 3vh;
+ text-shadow: 2px 2px 4px #c6a4f3;
+ text-align: center;
+
+}
+#heading{
+    margin-top: 0;
+    padding-top: 2vh;
+    background-color: #d9fff9;
+    font-size: 6vh;
+    text-shadow: 2px 2px 4px #c6a4f3;
+    text-align: center;
+    height: 13vh;
+    width: 100%;         /* ✅ important fix */
+    box-sizing: border-box; 
+}
+#color{
+    height: 2vh;
+    width: auto;
+    background-color: lightyellow;
+}
+form{
+   margin: 1vh;
+    display: flex;
+    gap: 3vh;
+    justify-content: center;
+}
+.box{
+    margin: 3vh;
+}
+.allradio{   
+     margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.button-img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    cursor: pointer;  
+}
+
+#button{
+    margin-right: 2vh;
+}
+#message{
+    margin-left: 2.5vh;
+}
+
+#text-div{
+    font-size :3vh;
+    font-weight:bold;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    text-align:center;
+    color:white ;
+     width: 25vh;
+    text-shadow: 1px 1px 2px black"
+
+}
+#text1-div{
+font-size :2vh;
+margin:2vh;
+width: 25vh;
+font-weight:italic}
+@media (min-width: 250px) and (max-width: 767px) {
+#textbox,#message{
+    
+     width:30vh;
+     margin-top: 1vh;
+} 
+form{
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.radio{
+    margin:0;
+
+     width: 6vh;
+    
+}
+.allradio{
+display: flex;
+     flex-direction: row; 
+     gap: 2vh;
+     
+}
+.button-img{
+    height: 1vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+#button{
+    margin-right: 3vh;
+    margin-left: 5vh;
+}
+.box{
+    margin: 3vh;
+    width: auto;
+    height: 31vh;
+    border-radius: 6vh;
+}    
+#heading>h3{
+        font-size: 7vh;
+}
+#icon>svg{
+margin-left: 12vh;
+    height: 4vh;
+    width: 6vh;
+    margin-top: -11vh;
+
+    position: absolute;
+
+}
+#heading>h3 {
+     padding-top: 4vh;
+    text-align: center;
+    font-size: 5vh;
+     
+     
+ }
+ #message{
+  margin-left: 1.5vh;
+ }
+ #container{
+    align-items: center;
+    justify-content: center;
+     margin-top: 16vh;
+ }
+img{
+    cursor: pointer;
+}
+}

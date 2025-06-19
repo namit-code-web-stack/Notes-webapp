@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0;
+
+      }
+      html,body{
+        overflow-x: hidden;
+      }
+      
+        .container{
+            height: 10vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+            #box{
+
+            width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+        }
+        h2{
+          text-align: center;
+          font-size: 3vh;
+        }
+         .container2{
+          margin-top: 2vh;
+          height: auto;
+          min-height: 100vw;
+          word-break: break-all;
+         width: 100vw;
+         text-transform: capitalize;   
+         font-size: 2vh;
+         
+        }
+        #ul{
+        height: 100%;
+        width: 100%;
+        margin: 3vh;
+        }
+
+         .video{
+          margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+       width: 100vw
+      }
+      .video>video{
+    height: 80%;
+    width: 80%;
+    margin-bottom: 6vh;
+  }
+        .video>h3{
+          margin-bottom: 2vh;
+        text-align: center;
+        
+      }
+
+        ul>li{
+          margin: 2vh
+        }
+
+    .container3{
+      margin-top: 5vh;
+    width: 100vw;
+    height: 38vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+  }
+    #ul2{
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;
+      }
+    #ul>h3{
+      text-transform:uppercase;
+      }
+     
+ 
+
+  #important{
+    margin-top: 3vh;
+    width: 75vw;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #important>svg{
+    height: 10vh;
+    width: 20vw;
+  }
+  #notes-imp{
+    margin-top: 1vh;
+    height: auto;
+    width: auto;
+    padding-left: 2vh;
+    word-wrap: break-word;
+  background-color: red;
+  border-radius: 32px;
+  color: white;
+margin-left: 5vh;
+
+  text-transform: capitalize;
+  }
+
+/* 
+  responsiveness */
+@media (min-width: 500px) {
+  #ul{
+    font-size: 2.5vh;
+  }
+
+}
+@media (min-width: 750px) {
+  #ul{
+       height: auto;
+       font-size: 3vh;
+        width: 50%;
+  }
+  .container2{
+    min-height: auto;
+
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .video{
+    height: 82vh;
+    width: auto;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+
+  }
+  .video>video{
+        height: 44%;
+        width: 96%
+    
+  }
+  .container3{
+display: flex;
+flex-direction: row;
+}
+#ul2{
+  width: 50%;
+}
+#important{
+  height: 34vh;
+  width: 50%;
+  margin-right: 40vw;
+
+}
+#notes-imp{
+     height: auto;
+    width: 30vw;
+}
+
+}
+@media (min-width: 750px) {
+
+}
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="box">
+            <h2>HELP</h2>
+        </div>
+    </div>
+   
+    <div class="container2">
+    <div id="ul"> 
+        <h3 id="step">STEPS</h3>
+        <ul type="disc">
+               <li>click on plus button
+                <ul type="circle"><li>the textbox,message box will be enabled</li>
+                    <li>textbox and message colour will be changed</li>
+                </ul>
+        <li>type your title in title section
+                    <ul type="circle"><li>you can type anything in title </li>
+                    <li>the length of title depend on your title</li></ul>
+               </li>
+        <li>type your message in message section
+                <ul type="circle"><li>you can type anything in message </li>
+                   <li>the length of title depend on your message</li></ul></li>
+       <li>select one circle 
+                 <ul type="circle"><li>three colour are available: green,yellow,red</li>
+                   <li>you can select one colour or circle at a same time</li></ul></li>
+        <li>click on button to store your notes
+                <ul type="circle"><li>notes will be stored</li></li>
+        </ul> 
+           </div>
+
+        <div class="video">
+        <h3>demo for (phone)</h3>
+        <video src="./notes-video.mp4" controls></video>
+        <h3>demo for (pc)</h3>
+        <video src="./notes video pc.mp4" controls></video>
+       </div>
+    </div>
+        
+
+    <div class="container3">
+    <div id="ul2">
+        <h3>how to delete notes</h3>
+        <ul type="disc">
+               <li>click on your note
+                <ul type="circle"><li>delete option will be open</li>
+                    <li>click on trash/delete icon</li>
+                    <li>alert will be coming</li>
+                    <li>click yes on alert</li>
+                    <li>note will be deleted</li>
+                </li>
+    </div>
+   <div id="important">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg>
+<div id="notes-imp">
+    <ul type="dish">
+        <li>you should click first + icon then fill title or message and choose colour</li>
+        <li>after that you should have to click on ADD NOTES</li>
+        <li>follow instructions</li>
+        <li>never save any personal data like otp,pin etc</li>
+    </ul>
+</div>
+   </div>
+   </div>
+</body>
+</html>

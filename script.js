@@ -249,7 +249,7 @@ button.addEventListener("click", () => {
    }
 
    else {
-      alert("fil proper")
+     alert("Please fill in the Title and Message fields, and select a color.");
    }
 })
 
@@ -418,10 +418,6 @@ window.addEventListener("load", () => {
                      input.remove();
                      input1.remove();
                      img4.remove();
-
-
-
-
 
                      updatelocal();
                   }
